@@ -388,6 +388,10 @@ li {
     width: 40rem;
 }
 
+.nossa-hist-txt{
+    cursor: default;
+}
+
 @media(min-width: 35em) {
     .nav-content {
         position: fixed;
