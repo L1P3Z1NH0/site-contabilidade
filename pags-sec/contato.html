@@ -27,67 +27,87 @@
     integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/style/index.css">
 </head>
 
 <body>
 
-  
-    <div class="nav-content bg-transition">
 
-      <a href="/index.html" class="button-icon">
-        <img class="icon-navbar" src="/images/header-pag-inicial/logo.png" alt="">
-      </a>
+  <div class="nav-content bg-transition">
+
+    <a href="/index.html" class="button-icon">
+      <img class="icon-navbar" src="/images/header-pag-inicial/logo.png" alt="">
+    </a>
 
 
-      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-        <span class="sr-only">Menu</span>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+      <span class="sr-only">Menu</span>
 
-      </button>
+    </button>
 
-      <nav>
-        <ul data-visible="false" id="primary-navigation">
-          <li>
-            <a class="link-header" href="/pags-sec/sobre.html">
-              A Empresa
-            </a>
-          </li>
+    <nav>
+      <ul data-visible="false" id="primary-navigation">
+        <li>
+          <a class="link-header" href="/pags-sec/sobre.html">
+            A Empresa
+          </a>
+        </li>
 
-          <li>
-            <a class="link-header" href="/pags-sec/contato.html">
-              Contato
-            </a>
-          </li>
+        <li class="wrapper" id="wrapper">
+          <a class="link-header click-text" role="button">
+            Nossos serviços
+            <span class="arrow"></span>
+          </a>
 
-          <li>
-            <a class="link-header" href="#">
-              Notícias
-            </a>
-          </li>
+          <ul class="dropdown-menu-ul">
+            <li><a class="dropdown-item" href="/pags-sec/declaracoes.html">Declarações</a>
+            </li>
+            <li><a class="dropdown-item" href="/pags-sec/assessoria.html">Assessoria</a></li>
+            <li><a class="dropdown-item" href="/pags-sec/certidoes.html">Certidões</a>
+            </li>
+            <li><a class="dropdown-item" href="/pags-sec/regularizacoes.html">Regularizações</a></li>
+            <li><a class="dropdown-item" href="/pags-sec/obrigacoes.html">Obrigações fiscais</a></li>
+            <li><a class="dropdown-item" href="/pags-sec/orcamentos.html">Orçamentos</a></li>
+            <li><a class="dropdown-item" href="/pags-sec/parcelamentos.html">Parcelamento de débitos</a></li>
+          </ul>
+        </li>
 
-        </ul>
-      </nav>
-    </div>
+        <li>
+          <a class="link-header" href="/pags-sec/contato.html">
+            Contato
+          </a>
+        </li>
 
-    <div class="form">
-      <h3 class="sub-title-form">Entre em contato</h3>
-      <form target="_blank" action="https://formsubmit.co/formulario@coelhoassessoriavm.com.br" method="POST">
-        <div class="form-group">
-          <div class="form-row">
-            <div class="col">
-              <input type="text" name="name" class="form-control" placeholder="Nome completo" required>
-            </div>
-            <div class="col">
-              <input type="email" name="email" class="form-control" placeholder="E-mail para contato" required>
-            </div>
+        <li>
+          <a class="link-header" href="#">
+            Notícias
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+
+  <div class="form">
+    <h3 class="sub-title-form">Entre em contato</h3>
+    <form target="_blank" action="https://formsubmit.co/formulario@coelhoassessoriavm.com.br" method="POST">
+      <div class="form-group">
+        <div class="form-row">
+          <div class="col">
+            <input type="text" name="name" class="form-control" placeholder="Nome completo" required>
+          </div>
+          <div class="col">
+            <input type="email" name="email" class="form-control" placeholder="E-mail para contato" required>
           </div>
         </div>
-        <div class="form-group">
-          <textarea placeholder="Mensagem aos nossos colaboradores" class="form-control" name="message" rows="10"
-            required></textarea>
-        </div>
-        <button type="submit" id="contato-btn" class="btn btn-lg btn-dark btn-block">Enviar Formulário</button>
-      </form>
-    </div>
+      </div>
+      <div class="form-group">
+        <textarea placeholder="Mensagem aos nossos colaboradores" class="form-control" name="message" rows="10"
+          required></textarea>
+      </div>
+      <button type="submit" id="contato-btn" class="btn btn-lg btn-dark btn-block">Enviar Formulário</button>
+    </form>
+  </div>
 
 
   <footer class="footer">
@@ -128,8 +148,9 @@
         <br>
         Todos os direitos reservados
         <br>
-        Suporte: <a class="email-suporte" href="mailto:wilian@coelhoassessoriavm.com.br">wilian@coelhoassessoriavm.com.br</a>
-    </p>
+        Suporte: <a class="email-suporte"
+          href="mailto:wilian@coelhoassessoriavm.com.br">wilian@coelhoassessoriavm.com.br</a>
+      </p>
 
       <!-- <img src="/images/header-pag-inicial/logo.png" alt="" class="footer-logo"> -->
 
@@ -151,7 +172,7 @@
     </div>
 
   </footer>
-
+  <script src="/js/dropdown.js"></script>
   <script src="/js/nav.js"></script>
   </div>
 </body>
